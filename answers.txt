@@ -1,1 +1,2 @@
+ls -ld directory
 find ps exit interdiff
