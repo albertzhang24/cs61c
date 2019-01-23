@@ -1,5 +1,8 @@
 mv
-touch
+chmod
 pwd
 ping
-find ps exit interdiff
+find
+ps
+exit
+interdiff
