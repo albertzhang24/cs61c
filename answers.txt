@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+ls -ld directory
+=======
 mv
 chmod
 pwd
 ping
+<<<<<<< HEAD
 find
 ps
 exit
 interdiff
+=======
+>>>>>>> 78b0f8fe3615b9b30b30599d478ac933dbbeb94c
+find ps exit interdiff
+>>>>>>> d56e19c81d94527641d11d09c6419069c762807b
