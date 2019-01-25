@@ -1,4 +1,4 @@
-ls -ld directory
+ls -la
 mv
 chmod
 pwd
