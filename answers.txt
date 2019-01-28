@@ -1,9 +1,10 @@
-<<<<<<< HEAD
-ls -ld directory
-=======
+ls -la
 mv
-touch
+chmod
 pwd
 ping
->>>>>>> 78b0f8fe3615b9b30b30599d478ac933dbbeb94c
-find ps exit interdiff
+find
+top
+exit
+interdiff
+
