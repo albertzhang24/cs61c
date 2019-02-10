@@ -1,6 +1,0 @@
-int f () {
-  int i;
-  int j = i = 7;
-  (j++)--;
-  return i;
-}

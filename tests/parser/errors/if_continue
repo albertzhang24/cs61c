@@ -1,6 +1,0 @@
-int main () {
-  if (true) {
-    continue;
-  }
-  return 0;
-}

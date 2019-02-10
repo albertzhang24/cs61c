@@ -1,4 +1,0 @@
-int f () {
-  int x = 9;
-  return ++x++;
-}
