@@ -1,0 +1,8 @@
+int f ();
+int g (int a, int b, char *c);
+
+char *d (char c);
+
+char *g (int b) {
+  return g (f (), b, d ()); 
+}

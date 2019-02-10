@@ -1,0 +1,6 @@
+int f () {
+  int i;
+  i++;
+  i--;
+  return NULL;
+}

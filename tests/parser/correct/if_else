@@ -1,0 +1,33 @@
+struct a {
+  int x;
+  int y;
+  struct a *next;
+};
+
+struct a const *b;
+
+int f () {
+  int x;
+  if (1) {
+
+  }
+  if (x = 9) {
+    if (1) {
+
+    } else {
+
+    }
+  }
+
+  if (b) {
+    if (-1) {
+      if (b && b) {
+        Print (b);
+      }
+    }
+  } else {
+    Print (7);
+  }
+
+  return -1;
+}

@@ -1,0 +1,91 @@
+//Check that every kind of expr can be used in a 1 and 2 arg function
+
+struct int_holder {
+  int x;
+};
+
+int g () {
+  return 0;
+}
+
+int ptr_deref (int *ptr) {
+  return *ptr;
+}
+
+int ptr_deref2 (int *ptr1, int*ptr2) {
+  return *ptr1 + *ptr2;
+}
+
+int f (int a) {
+  int in;
+  struct int_holder i;
+  struct int_holder *ptr = &i;
+  f (1 + 2);
+  f (1 - 2);
+  f (1 * 2);
+  f (1 / 2);
+  f (1 == 2);
+  f (1 != 2);
+  f (1 >= 2);
+  f (1 > 2);
+  f (1 <= 2);
+  f (1 < 2);
+  f (1 && 2);
+  f (1 || 2);
+  f (1 | 2);
+  f (1 & 2);
+  f (1 ^ 2);
+  f (i.x);
+  f (ptr->x);
+  f (i.x++);
+  f (ptr->x--);
+  f (++ptr->x);
+  f (--i.x);
+  f (-in);
+  ptr_deref(&i.x);
+  f ((*ptr).x);
+  f (!1);
+  f (~1);
+  f (g ());
+  f ((int) 'c');
+  f (in);
+  f ((1));
+  return g ();
+}
+
+int h (int a, int b) {
+  int in;
+  struct int_holder i;
+  struct int_holder *ptr = &i;
+  h (1 + 2, 1+2);
+  h (1 - 2, 1-2);
+  h (1 * 2, 1*2);
+  h (1 / 2, 1/2);
+  h (1 == 2, 1==2);
+  h (1 != 2, 1!=2);
+  h (1 >= 2, 1>=2);
+  h (1 > 2, 1>2);
+  h (1 <= 2, 1<=2);
+  h (1 < 2, 1<2);
+  h (1 && 2, 1&&2);
+  h (1 || 2, 1||2);
+  h (1 | 2, 1|2);
+  h (1 & 2, 1&x);
+  h (1 ^ 2, 1^2);
+  h (i.x, i.x);
+  h (ptr->x, ptr->x);
+  h (i.x++, i.x++);
+  h (ptr->x--, ptr->x--);
+  h (++ptr->x, ++ptr->x);
+  h (--i.x, --i.x);
+  h (-in, -in);
+  ptr_deref2(&i.x, &i.x);
+  h ((*ptr).x, (*ptr).x);
+  h (!1, !1);
+  h (~1, ~1);
+  h (g (), g());
+  h ((int) 'c', (int) 'c');
+  h (in, in);
+  h ((1), (1));
+  return h (f (f (f (a))), b);
+}

@@ -1,0 +1,6 @@
+struct str {
+  char *contents;
+  int size;
+};
+
+struct str contents;

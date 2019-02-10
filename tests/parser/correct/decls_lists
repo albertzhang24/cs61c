@@ -1,0 +1,12 @@
+struct empty {};
+
+struct empty const *y = NULL, **x = NULL, a = 0;
+
+int f () {
+  char *x, y ='c', z;
+  bool *const q, f = False, t =True;
+  const int a = 1, b = 2;
+  int c, d, e, f, g;
+  struct empty const *a, b;
+  return d;
+}

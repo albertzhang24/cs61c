@@ -1,0 +1,41 @@
+struct example {
+  int i;
+  int j;
+  int k;
+};
+
+int main () {
+  // Check that operators of the same precedence behave left to right
+
+  // Binary
+  int a = 1 + 2 + 3 - 4 - 5;
+  int b = 1 * 2 * 3 / 4 / 5;
+  int c = 1 < 2 <= 3 > 4 >= 5 < 6 <= 7 > 8 >= 9;
+  int d = 1 == 2 != 3 == 4 != 5;
+
+  // Postfix
+  struct example *ptr;
+  int e = ptr->i++;
+  int f = ptr++->j;
+  int g = (*ptr)--.i;
+
+  // Prefix
+  int h = ~!  (bool)- --*++&a;
+
+
+  // Check that operators of different precedence work accordingly
+
+  bool b1 = false || false && true; 
+  bool b2 = false && true || false;
+  int elem = 1 ^ 2 | 4 & 5 | 6 ^ 7 & 8;
+  int z = ++a--;
+  int y = --a++;
+  a = *ptr.i;
+  *&ptr->i;
+  1 + 2 - 3 * 4 / 5 == 6 != 7 > 8 >= 9 < 10 <= 11 && 12 || 13 & 14 | 15 ^ 16;
+  1 || 2 && 3 | 4 ^ 5 & 6 != 7 == 8 >= 9 > 10 <= 11 < 12 - 13 + 14 / 15 * 16;
+
+  *(&z-- + &y++);
+
+  return (int) false;
+}

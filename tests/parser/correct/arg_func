@@ -1,0 +1,22 @@
+struct name {
+ ;
+};
+
+int f (char *c) {
+  return strlen (c);
+}
+
+int g () {
+  return 2;
+}
+
+bool f (bool a, struct name d) {
+  return false;
+}
+
+char a (bool v, int a, int b, char *q) {
+  if (v) {
+    return *(q + a - b);
+  }
+  return *q;
+}

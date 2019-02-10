@@ -1,0 +1,19 @@
+int f () {
+  int x, y = 6;
+  x = 7;
+  x + y;
+  x - y;
+  x * y;
+  x / y;
+  x || y;
+  x && y;
+  x & y;
+  x | y;
+  x ^ y;
+  x == y;
+  x < y;
+  x <= y;
+  x > y;
+  x >= y;
+  return x;
+}

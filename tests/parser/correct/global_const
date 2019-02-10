@@ -1,0 +1,4 @@
+int * const x, **y, z;
+int const **a;
+CONST int *q, p = 3;
+char * const *m = NULL, h = 'c';

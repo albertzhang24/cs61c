@@ -1,0 +1,8 @@
+int f () {
+  "string";
+  'c';
+  False;
+  true;
+  NULL;
+  return 12345;
+}

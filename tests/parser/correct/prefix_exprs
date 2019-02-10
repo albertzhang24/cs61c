@@ -1,0 +1,14 @@
+int f () {
+  int i;
+  --i;
+  ++i;
+  int x = -i;
+  -i;
+  -14;
+  int *ptr = &i;
+  int y = *ptr;
+  *ptr = 23;
+  bool f = !false;
+  f = ~f;
+  return -12;
+}

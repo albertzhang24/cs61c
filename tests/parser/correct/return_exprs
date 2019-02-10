@@ -1,0 +1,149 @@
+struct int_holder {int x;};
+
+int a () {
+  return 1 + 2;
+}
+
+int b () {
+  return 1 -2;
+}
+
+int c () {
+  return 1 * 2;
+}
+
+int d () {
+  return 1 / 2;
+}
+
+int e () {
+  return 1 == 2;
+}
+
+int f () {
+  return 1 != 2;
+}
+
+int g () {
+  return 1 >= 2;
+}
+
+int h () {
+  return 1 > 2;
+}
+
+int i () {
+  return 1 <= 2;
+}
+
+int j () {
+  return 1 < 2;
+}
+
+int k () {
+  return 1 && 2;
+}
+
+int l () {
+  return 1 || 2;
+}
+
+int m () {
+  return 1 & 2;
+}
+
+int n () {
+  return 1 | 2;
+}
+
+int o () {
+  return 1 ^ 2;
+}
+
+int p (int a) {
+  return a++;
+}
+
+int q (int a) {
+  return a--;
+}
+
+int r (int a) {
+  return ++a;
+}
+
+int s (int a) {
+  return --a;
+}
+
+int t (int a) {
+  return -a;
+}
+
+int *u (int a) {
+  return &a;
+}
+
+int v (int *a) {
+  return *a;
+}
+
+int w (int a) {
+  return !a;
+}
+
+int x (int a) {
+  return ~a;
+}
+
+int y (struct int_holder a) {
+  return a.x;
+}
+
+int z (struct int_holder* a) {
+  return a->x;
+}
+
+int aa (int a) {
+  return 1;
+}
+
+char ab (int a) {
+  return 'a';
+}
+
+char* ac (int a) {
+  return "empty string";
+}
+
+bool ad (int a) {
+  return true;
+}
+
+bool ae (int a) {
+  return false;
+}
+
+bool af (int a) {
+  return true;
+}
+
+int ag (int a) {
+  return null;
+}
+
+int ah (int a) {
+  return a;
+}
+
+int ai (int a) {
+  return a ();
+}
+
+int aj (int a) {
+  return (int) ad (a);
+}
+
+int ak (int a) {
+  return (a);
+}
