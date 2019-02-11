@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
     for (i = 0; i < (argc - 2); i++) {
       /* Only attempt to parse files with no lexing errors. */
       if (DisplayErrors(tokens[i]) == 0) {
-        asts[i] = ParseTokens(tokens[i], argv[i + 2]);
+        asts[i] = ParseTokens(tokens[i], argv[i + 1]);
         exitcode = exitcode || CheckErrors(asts[i]);
         PrintAST(asts[i]);
       } else {
@@ -103,6 +103,12 @@ int main(int argc, char** argv) {
   free(files);
   free(boundaries);
   free(tokens);
+  if (parse) {
+    for (i = 0; i < (argc - 2); i++) { 
+      FreeAST (asts[i]);
+    }
+    free (asts);
+  }
 
   /* Exit if any file has errored. */
   if (exitcode) {
