@@ -676,7 +676,7 @@ AST* VariableDeclList(TokenList** tokens) {
   if (initial_stars == NULL) {
     allocation_failed();
   }
-  if (tokens != NULL) {
+  if (*tokens != NULL) {
     curr_token = (*tokens)->t;
   }
   if (ProcessToken(tokens, TOKEN_KW_CONST)) {
@@ -686,7 +686,7 @@ AST* VariableDeclList(TokenList** tokens) {
     base_type = TypeKeyword(tokens);
   } else {
     base_type = TypeKeyword(tokens);
-    if (tokens != NULL) {
+    if (*tokens != NULL) {
       curr_token = (*tokens)->t;
     }
     if (ProcessToken(tokens, TOKEN_KW_CONST)) {
@@ -705,7 +705,7 @@ AST* VariableDeclList(TokenList** tokens) {
         }
         initial_stars[star_count++] = Star(tokens);
       }
-      if (tokens != NULL) {
+      if (*tokens != NULL) {
         curr_token = (*tokens)->t;
       }
       /* One final check for const. */
@@ -745,7 +745,7 @@ AST* VariableDeclList(TokenList** tokens) {
       AppendAST(var_ast, Expr(tokens));
     }
     AppendAST(ast, var_ast);
-    if (tokens != NULL) {
+    if (*tokens != NULL) {
       curr_token = (*tokens)->t;
     }
   } while (ProcessToken(tokens, TOKEN_SYM_COMMA));
@@ -778,7 +778,7 @@ AST* StructVariableDeclList(TokenList** tokens) {
   AST* ast = MakeAST(NODETYPE_VAR_DECL_LIST, curr_token->filename,
                      curr_token->linenum);
   AST* base_type = TypeKeyword(tokens);
-  if (tokens != NULL) {
+  if (*tokens != NULL) {
     curr_token = (*tokens)->t;
   }
   AST* var_ast;
@@ -801,7 +801,7 @@ AST* StructVariableDeclList(TokenList** tokens) {
       AppendAST(var_ast, Expr(tokens));
     }
     AppendAST(ast, var_ast);
-    if (tokens != NULL) {
+    if (*tokens != NULL) {
       curr_token = (*tokens)->t;
     }
   } while (ProcessToken(tokens, TOKEN_SYM_COMMA));
@@ -1252,7 +1252,7 @@ AST* PostfixExpr(TokenList** tokens) {
   }
   AST* ast = BaseExpr(tokens);
   Token* curr_token = NULL;
-  if (tokens != NULL) {
+  if (*tokens != NULL) {
     curr_token = (*tokens)->t;
   }
   while (is_postfix_expr(*tokens)) {
@@ -1288,7 +1288,7 @@ AST* PostfixExpr(TokenList** tokens) {
 AST* PrefixExpr(TokenList** tokens) {
   AST* ast = NULL;
   Token* curr_token = NULL;
-  if (tokens != NULL) {
+  if (*tokens != NULL) {
     curr_token = (*tokens)->t;
   }
   if (ProcessToken(tokens, TOKEN_SYM_PLUSPLUS)) {
