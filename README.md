@@ -1,2 +1,2 @@
-# lab02
-CS61C Lab02
+# labs
+CS61C Labs
