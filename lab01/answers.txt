@@ -1,0 +1,9 @@
+1. set args
+2. break ...if expr
+3. n
+4. s
+5. c
+6. p
+7. display [/f ] expr
+8. info locals
+9. quit
