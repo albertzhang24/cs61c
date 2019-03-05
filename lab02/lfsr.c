@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 unsigned get_bit(unsigned x,
                  unsigned n) {
     // YOUR CODE HERE
@@ -24,6 +28,13 @@ void lfsr_calculate(uint16_t *reg) {
     unsigned xored_up = get_bit((unsigned) *reg, 0) ^  get_bit((unsigned) *reg, 2) ^ get_bit((unsigned) *reg, 3) ^ get_bit((unsigned) *reg, 5); 
     *reg = *reg >> 1; 
     set_bit((unsigned *) reg, 15, xored_up);
+<<<<<<< HEAD
+=======
+=======
+void lfsr_calculate(uint16_t *reg) {
+    /* YOUR CODE HERE */
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 }
 
 int main() {

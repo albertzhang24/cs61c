@@ -8,23 +8,48 @@ unsigned get_bit(unsigned x,
     // Returning -1 is a placeholder (it makes
     // no sense, because get_bit only returns 
     // 0 or 1)
+<<<<<<< HEAD
     return (x & (1 << n)) >> n;
+=======
+<<<<<<< HEAD
+    return (x & (1 << n)) >> n;
+=======
+    return -1;
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 }
 // Set the nth bit of the value of x to v.
 // Assume 0 <= n <= 31, and v is 0 or 1
 void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
+<<<<<<< HEAD
     *x = (*x & ~(1 << n)) ^ (v << n);
+=======
+<<<<<<< HEAD
+    *x = (*x & ~(1 << n)) ^ (v << n);
+=======
+    // YOUR CODE HERE
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 }
 // Flip the nth bit of the value of x.
 // Assume 0 <= n <= 31
 void flip_bit(unsigned * x,
               unsigned n) {
     // YOUR CODE HERE
+<<<<<<< HEAD
     unsigned nth_bit = get_bit(*x, n);
     unsigned flipped_bit = nth_bit ^ 1;  
     set_bit(x, n, flipped_bit);
+=======
+<<<<<<< HEAD
+    unsigned nth_bit = get_bit(*x, n);
+    unsigned flipped_bit = nth_bit ^ 1;  
+    set_bit(x, n, flipped_bit);
+=======
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 }
 
 

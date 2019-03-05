@@ -21,10 +21,11 @@ dest:
 
 .text
 main:
-	addi t0, x0, 0
-	la t1, source
-	la t2, dest
+	addi t0, x0, 0 //k = 0
+	la t1, source //source[]
+	la t2, dest //dest[]
 loop:
+<<<<<<< HEAD:lab03/lab3_ex2_assembly.s
 	slli t3, t0, 2
 	add t4, t1, t3
 	lw t5, 0(t4)
@@ -39,6 +40,16 @@ loop:
     sw t3, 0(t6)
 	addi t0, t0, 1
 	jal x0, loop
+=======
+	slli t3, t0, 2 //0 = 0 << 2 = 0 * 4 = 0. 
+	add t4, t1, t3 //t4 = 3 + 0 = 3
+	lw t5, 0(t4) // Load first entry of t4 array into t5 register. 
+	beq t5, x0, exit //if t5 == x0, then go to exit. t5 (3) so != 0
+	add t6, t2, t3 //t6 = dest[0] + 0 = 1
+	sw t5, 0(t6) //Saving t5 (3) to first entry of t6 in stack. 
+	addi t0, t0, 1 //t0 += 1, so t0 = 1
+	jal x0, loop 
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118:labs/lab03/lab3_ex2_assembly.s
 exit:
 	jal ra, print_lists
 	addi a0, x0, 10

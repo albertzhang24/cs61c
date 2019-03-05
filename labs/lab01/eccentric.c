@@ -1,23 +1,10 @@
 #include <stdio.h>
 
 /* Only change any of these 4 values */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 #define V0 3
 #define V1 3
 #define V2 1
 #define V3 3
-<<<<<<< HEAD
-=======
-=======
-#define V0 0
-#define V1 -1
-#define V2 0
-#define V3 0
->>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
->>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 
 int main(void) {
 	int a;

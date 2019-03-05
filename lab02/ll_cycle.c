@@ -7,6 +7,10 @@ typedef struct node {
 
 int ll_has_cycle(node *head) {
     /* your code here */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 
     node* tortoise = head;
     node* hare = head; 
@@ -18,6 +22,11 @@ int ll_has_cycle(node *head) {
         }
     } 
     return 0;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
+>>>>>>> 59380972db5c535d00e1a1579d80b09eb1c17118
 }
 
 void test_ll_has_cycle(void) {

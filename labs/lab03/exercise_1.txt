@@ -1,0 +1,4 @@
+1. .data, .word, .text directives refer to which parts of the memory model will be used. ie) .text is for the code. 
+2. 34. The 9th indexed fibonnaci number. 
+3. ?
+4. 233.
