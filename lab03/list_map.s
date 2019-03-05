@@ -94,7 +94,11 @@ loop:   #do...
     bne s1, t0, loop    # ... while i!= 10
     lw  ra, 0(sp)
     lw  s0, 4(sp)
+<<<<<<< HEAD
     lw  s1, 4(sp)
+=======
+    lw  s1, 8(sp)
+>>>>>>> ddb1b411c03b767f7c403c4160829cdacdf052e4
     addi sp, sp, 12
     jr ra
 

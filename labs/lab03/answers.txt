@@ -1,0 +1,4 @@
+1. t0
+2. t1
+3. t2
+4. Through moving the array index via slli and then manipulating the stack to save and load array values. 
